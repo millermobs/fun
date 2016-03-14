@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var c = require("skilstak-colors");
+
+
+function randInt(min,max) {
+  return Math.floor((Math.random() * (max - min + 1)) + min);
+} 
+
+console.log(c.clear);
+
+for (var i = 0; i < 5; i++) {
+  var someRand = randInt(1,6);
+  console.log("Random Integer: " + someRand);
+}
+
